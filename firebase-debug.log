@@ -52,3 +52,57 @@
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
 
+[debug] [2018-04-05T16:07:34.863Z] ----------------------------------------------------------------------
+[debug] [2018-04-05T16:07:34.871Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Zachary\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-04-05T16:07:34.872Z] CLI Version:   3.18.0
+[debug] [2018-04-05T16:07:34.872Z] Platform:      win32
+[debug] [2018-04-05T16:07:34.872Z] Node Version:  v6.11.4
+[debug] [2018-04-05T16:07:34.879Z] Time:          Thu Apr 05 2018 11:07:34 GMT-0500 (Central Daylight Time)
+[debug] [2018-04-05T16:07:34.879Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-05T16:07:34.913Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-05T16:07:34.916Z] > authorizing via signed-in user
+[debug] [2018-04-05T16:07:34.922Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-04-05T16:07:34.934Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/EgV7BgdIdZ7R2RH_qL0pyj__sYQN7angmHkEbq7rE1s',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Apr 05 2018 11:07:34 GMT-0500 (Central Daylight Time)
+[debug] [2018-04-05T16:07:35.433Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-05T16:07:35.473Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/test-project-2c25b  
+  
+ Thu Apr 05 2018 11:07:35 GMT-0500 (Central Daylight Time)
+[debug] [2018-04-05T16:07:35.972Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-05T16:07:35.975Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/test-project-2c25b/tokens  
+  
+ Thu Apr 05 2018 11:07:35 GMT-0500 (Central Daylight Time)
+[debug] [2018-04-05T16:07:36.427Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-05T16:07:36.429Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/test-project-2c25b  
+  
+ Thu Apr 05 2018 11:07:36 GMT-0500 (Central Daylight Time)
+[debug] [2018-04-05T16:07:36.810Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Zachary\LocalDev\test-pwa'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-04-05T16:07:38.680Z] Fetching environment
+[debug] [2018-04-05T16:07:38.687Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/392291890373:getServerAppConfig  
+  
+ Thu Apr 05 2018 11:07:38 GMT-0500 (Central Daylight Time)
+[debug] [2018-04-05T16:07:38.690Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/392291890373/clients/_:getWebAppConfig  
+  
+ Thu Apr 05 2018 11:07:38 GMT-0500 (Central Daylight Time)
+[debug] [2018-04-05T16:07:39.090Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-05T16:07:39.165Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-05T16:07:39.165Z] Starting @google-cloud/functions-emulator
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[warn] !  functions: Error from emulator. Error: Emulator crashed! Check the log file...
+[debug] [2018-04-05T16:07:39.494Z] Error: Emulator crashed! Check the log file...
+    at ChildProcess.child.on (C:\Users\Zachary\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\@google-cloud\functions-emulator\src\cli\controller.js:650:24)
+    at emitTwo (events.js:106:13)
+    at ChildProcess.emit (events.js:191:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:219:12)
